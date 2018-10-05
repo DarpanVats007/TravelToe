@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabs"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="#FFF"
+        app:tabSelectedTextColor="@color/colorAccent"
+        >
+
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:elevation="4dp"-->
+        <!--android:minHeight="?attr/actionBarSize"></TableLayout>-->
+        <!--//android:tabMode="fixed"-->
+
+        <!--/>-->
+
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginBottom="-83dp"
+        android:layout_marginEnd="19dp"
+        android:onClick="signOut"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="47dp"
+        android:text="TextView" />
+
+
+    <Button
+        android:id="@+id/butcCamerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="89dp"
+        android:onClick="buttonCameraOpen"
+        android:text="OPen Camera" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="104dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+</LinearLayout>

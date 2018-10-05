@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dude.traveltoev11">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <uses-feature
+        android:glEsVersion="0x7FFFFFFF"
+        android:required="true" />
+
+    <!-- <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27"/> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CameraActivity" />
+        <!-- <activity android:name="" /> -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA12ZVNZS6AuiNjLlu01i8bhV3vSGN8IlI" />
+
+        <activity
+            android:name=".Tabbed_profile"
+            android:label="@string/title_activity_tabbed_profile"
+            android:theme="@style/AppTheme" />
+        <!-- <provider -->
+        <!-- android:name=".Tabbed_profile" -->
+        <!-- android:authorities="${applicationId}.my.package.name.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/provider_paths"/> -->
+        <!-- </provider> -->
+
+
+        <!-- <provider -->
+        <!-- android:name=".Tab2Frag" -->
+        <!-- android:authorities="${applicationId}.my.package.name.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/provider_paths"/> -->
+        <!-- </provider> -->
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+
+
+        </provider>
+    </application>
+
+</manifest>

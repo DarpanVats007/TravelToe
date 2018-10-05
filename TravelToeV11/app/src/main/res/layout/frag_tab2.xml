@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Tab2"-->
+        <!--android:textSize="100dp"/>-->
+
+
+    <Button
+        android:id="@+id/fileChose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/openCamera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="261dp"
+        android:layout_weight="1"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:layout_weight="1"
+        android:text="UPLOAD" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/buttonUpload"-->
+        <!--android:layout_alignEnd="@+id/addLocation"-->
+        <!--android:text="Show Uploads"-->
+        <!--android:textSize="16sp"-->
+        <!--android:id="@+id/showUploads"/>-->
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="328dp"
+        android:layout_height="141dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="89dp" />
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/fileChose"
+        android:hint="Enter file name" />
+
+    <ImageView
+        android:id="@+id/imageViewGallery"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="190dp" />
+
+    <ImageView
+        android:id="@+id/imageViewClick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="445dp" />
+
+    <Button
+        android:id="@+id/addLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="133dp"
+        android:layout_weight="1"
+        android:text="Add Location" />
+
+    <Button
+        android:id="@+id/openCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="507dp"
+        android:layout_weight="1"
+        android:text="Open Camera" />
+
+
+</RelativeLayout>

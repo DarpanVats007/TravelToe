@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "337477094492",
+    "firebase_url": "https://traveltoev1.firebaseio.com",
+    "project_id": "traveltoev1",
+    "storage_bucket": "traveltoev1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337477094492:android:6857d89a6c5071a8",
+        "android_client_info": {
+          "package_name": "com.example.dude.traveltoev11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337477094492-q1vhf8qf9hsku2ov05c1rmpetqgpmn1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtLU8pemUmegwAKLA0coVpjjxHQxpJ5rE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
